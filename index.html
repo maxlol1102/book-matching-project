@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Matching Project</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; }
+        .container { width: 80%; margin: auto; }
+        table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+        th, td { border: 1px solid black; padding: 10px; text-align: left; }
+        a { text-decoration: none; color: blue; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>📚 Book Matching Project</h1>
+        <p>This project extracts book data from <strong>BooksToScrape</strong> and <strong>Open Library</strong>, and stores them in relational tables.</p>
+
+        <h2>📂 Download Extracted Data</h2>
+        <table>
+            <tr>
+                <th>Data Type</th>
+                <th>Download Link</th>
+            </tr>
+            <tr>
+                <td>📄 BooksToScrape HTML Pages</td>
+                <td><a href="extracted_data/books_html/" target="_blank">View HTML Data</a></td>
+            </tr>
+            <tr>
+                <td>📄 Open Library JSON Data</td>
+                <td><a href="extracted_data/openlibrary_html/books.json" download>Download JSON</a></td>
+            </tr>
+            <tr>
+                <td>📊 Table A (BooksToScrape Data)</td>
+                <td><a href="output/tableA.csv" download>Download tableA.csv</a></td>
+            </tr>
+            <tr>
+                <td>📊 Table B (Open Library Data)</td>
+                <td><a href="output/tableB.csv" download>Download tableB.csv</a></td>
+            </tr>
+        </table>
+
+        <h2>🔍 Project Details</h2>
+        <p>We used <strong>Python, BeautifulSoup, and Requests</strong> to scrape book data. The extracted data is formatted as CSV for analysis.</p>
+    </div>
+</body>
+</html>
