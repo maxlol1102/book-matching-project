@@ -5,44 +5,142 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Book Matching Project</title>
     <style>
-        body { font-family: Arial, sans-serif; text-align: center; }
-        .container { width: 80%; margin: auto; }
-        table { width: 100%; border-collapse: collapse; margin-top: 20px; }
-        th, td { border: 1px solid black; padding: 10px; text-align: left; }
-        a { text-decoration: none; color: blue; }
+        /* General Styles */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f7fc;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        h1, h2 {
+            color: #4C8BF5;
+        }
+        
+        /* Container */
+        .container {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        
+        /* Header */
+        header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        
+        header h1 {
+            font-size: 3rem;
+        }
+
+        header p {
+            font-size: 1.1rem;
+            color: #777;
+        }
+        
+        /* Table Styling */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 30px;
+        }
+        
+        th, td {
+            padding: 12px 15px;
+            text-align: left;
+            border-bottom: 1px solid #e4e4e4;
+        }
+        
+        th {
+            background-color: #f4f7fc;
+            font-size: 1.1rem;
+            color: #4C8BF5;
+        }
+        
+        td {
+            background-color: #fafafa;
+        }
+
+        tr:hover {
+            background-color: #f0f8ff;
+        }
+        
+        /* Links Styling */
+        a {
+            text-decoration: none;
+            color: #4C8BF5;
+            font-weight: bold;
+        }
+
+        a:hover {
+            color: #2a66c3;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            font-size: 0.9rem;
+            color: #777;
+        }
+
+        footer a {
+            color: #4C8BF5;
+        }
+
+        footer a:hover {
+            color: #2a66c3;
+        }
+
     </style>
 </head>
 <body>
+
     <div class="container">
-        <h1>📚 Book Matching Project</h1>
-        <p>This project extracts book data from <strong>BooksToScrape</strong> and <strong>Open Library</strong>, and stores them in relational tables.</p>
+        <header>
+            <h1>📚 Book Matching Project</h1>
+            <p>This project extracts book data from <strong>BooksToScrape</strong> and <strong>Open Library</strong>, and stores them in relational tables.</p>
+        </header>
 
-        <h2>📂 Download Extracted Data</h2>
-        <table>
-            <tr>
-                <th>Data Type</th>
-                <th>Download Link</th>
-            </tr>
-            <tr>
-                <td>📄 BooksToScrape HTML Pages</td>
-                <td><a href="extracted_data/books_html/" target="_blank">View HTML Data</a></td>
-            </tr>
-            <tr>
-                <td>📄 Open Library JSON Data</td>
-                <td><a href="extracted_data/openlibrary_html/books.json" download>Download JSON</a></td>
-            </tr>
-            <tr>
-                <td>📊 Table A (BooksToScrape Data)</td>
-                <td><a href="output/tableA.csv" download>Download tableA.csv</a></td>
-            </tr>
-            <tr>
-                <td>📊 Table B (Open Library Data)</td>
-                <td><a href="output/tableB.csv" download>Download tableB.csv</a></td>
-            </tr>
-        </table>
+        <section>
+            <h2>📂 Download Extracted Data</h2>
+            <table>
+                <tr>
+                    <th>Data Type</th>
+                    <th>Download Link</th>
+                </tr>
+                <tr>
+                    <td>📄 BooksToScrape HTML Pages</td>
+                    <td><a href="extracted_data/books_html/" target="_blank">View HTML Data</a></td>
+                </tr>
+                <tr>
+                    <td>📄 Open Library JSON Data</td>
+                    <td><a href="extracted_data/openlibrary_html/books.json" download>Download JSON</a></td>
+                </tr>
+                <tr>
+                    <td>📊 Table A (BooksToScrape Data)</td>
+                    <td><a href="output/tableA.csv" download>Download tableA.csv</a></td>
+                </tr>
+                <tr>
+                    <td>📊 Table B (Open Library Data)</td>
+                    <td><a href="output/tableB.csv" download>Download tableB.csv</a></td>
+                </tr>
+            </table>
+        </section>
 
-        <h2>🔍 Project Details</h2>
-        <p>We used <strong>Python, BeautifulSoup, and Requests</strong> to scrape book data. The extracted data is formatted as CSV for analysis.</p>
+        <section>
+            <h2>🔍 Project Details</h2>
+            <p>We used <strong>Python, BeautifulSoup, and Requests</strong> to scrape book data. The extracted data is formatted as CSV for analysis.</p>
+        </section>
     </div>
+
+    <footer>
+        <p>Created with ❤️ by Book Matching Team | <a href="https://github.com">GitHub</a></p>
+    </footer>
+
 </body>
 </html>
