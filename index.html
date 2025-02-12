@@ -113,34 +113,46 @@
                 <tr>
                     <th>Data Type</th>
                     <th>Download Link</th>
+                    <th>Website Link</th>
                 </tr>
                 <tr>
                     <td>📄 BooksToScrape HTML Pages</td>
-                    <td><a href="extracted_data/books_html/" target="_blank">View HTML Data</a></td>
+                    <td>
+                        <!-- Display links for each page dynamically -->
+                        <a href="extracted_data/books_html/page_1.html" target="_blank">Page 1</a> | 
+                        <a href="extracted_data/books_html/page_2.html" target="_blank">Page 2</a> | 
+                        <a href="extracted_data/books_html/page_3.html" target="_blank">Page 3</a> | 
+                        <a href="extracted_data/books_html/page_4.html" target="_blank">Page 4</a> | 
+                        <a href="extracted_data/books_html/page_5.html" target="_blank">Page 5</a>
+                    </td>
+                    <td><a href="https://books.toscrape.com/" target="_blank">BooksToScrape</a></td>
                 </tr>
                 <tr>
                     <td>📄 Open Library JSON Data</td>
                     <td><a href="extracted_data/openlibrary_html/books.json" download>Download JSON</a></td>
+                    <td><a href="https://openlibrary.org/" target="_blank">Open Library</a></td>
                 </tr>
                 <tr>
                     <td>📊 Table A (BooksToScrape Data)</td>
                     <td><a href="output/tableA.csv" download>Download tableA.csv</a></td>
+                    <td><a href="https://books.toscrape.com/" target="_blank">BooksToScrape</a></td>
                 </tr>
                 <tr>
                     <td>📊 Table B (Open Library Data)</td>
                     <td><a href="output/tableB.csv" download>Download tableB.csv</a></td>
+                    <td><a href="https://openlibrary.org/" target="_blank">Open Library</a></td>
                 </tr>
             </table>
         </section>
 
         <section>
             <h2>🔍 Project Details</h2>
-            <p>We used <strong>Python, BeautifulSoup, and Requests</strong> to scrape book data. The extracted data is formatted as CSV for analysis.</p>
+            <p>I used <strong>Python, BeautifulSoup, and Requests</strong> to scrape book data. The extracted data is formatted as CSV for analysis.</p>
         </section>
     </div>
 
     <footer>
-        <p>Created with ❤️ by Book Matching Team | <a href="https://github.com">GitHub</a></p>
+        <p>Created with ❤️ by Vu Nguyen | <a href="https://github.com/maxlol1102">GitHub</a></p>
     </footer>
 
 </body>
