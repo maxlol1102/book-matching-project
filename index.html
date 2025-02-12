@@ -66,7 +66,7 @@
             background-color: #444;
         }
 
-        tr:hover {
+        tr::hover {
             background-color: #555;
         }
 
@@ -77,7 +77,7 @@
             font-weight: bold;
         }
 
-        a:hover {
+        a::hover {
             color: #88aaff;
         }
 
@@ -93,7 +93,7 @@
             color: #A0C4FF;
         }
 
-        footer a:hover {
+        footer a::hover {
             color: #88aaff;
         }
 
@@ -118,12 +118,11 @@
                 <tr>
                     <td>📄 BooksToScrape HTML Pages</td>
                     <td>
-                        <!-- Display links for each page dynamically -->
-                        <a href="extracted_data/books_html/page_1.html" target="_blank">Page 1</a> | 
-                        <a href="extracted_data/books_html/page_2.html" target="_blank">Page 2</a> | 
-                        <a href="extracted_data/books_html/page_3.html" target="_blank">Page 3</a> | 
-                        <a href="extracted_data/books_html/page_4.html" target="_blank">Page 4</a> | 
-                        <a href="extracted_data/books_html/page_5.html" target="_blank">Page 5</a>
+                       <a href="extracted_data/books_html/page_1.html" class="btn" target="_blank">Page 1</a>
+                        <a href="extracted_data/books_html/page_2.html" class="btn" target="_blank">Page 2</a>
+                        <a href="extracted_data/books_html/page_3.html" class="btn" target="_blank">Page 3</a>
+                        <a href="extracted_data/books_html/page_4.html" class="btn" target="_blank">Page 4</a>
+                        <a href="extracted_data/books_html/page_5.html" class="btn" target="_blank">Page 5</a>
                     </td>
                     <td><a href="https://books.toscrape.com/" target="_blank">BooksToScrape</a></td>
                 </tr>
@@ -135,12 +134,12 @@
                 <tr>
                     <td>📊 Table A (BooksToScrape Data)</td>
                     <td><a href="output/tableA.csv" download>Download tableA.csv</a></td>
-                    <td><a href="https://books.toscrape.com/" target="_blank">BooksToScrape</a></td>
+                    
                 </tr>
                 <tr>
                     <td>📊 Table B (Open Library Data)</td>
                     <td><a href="output/tableB.csv" download>Download tableB.csv</a></td>
-                    <td><a href="https://openlibrary.org/" target="_blank">Open Library</a></td>
+                    
                 </tr>
             </table>
         </section>
