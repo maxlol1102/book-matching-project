@@ -1,180 +1,123 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE HTML>
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Book Matching Project</title>
-    <style>
-        /* General Styles */
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #1e1e1e;
-            color: #f0f0f0;
-            margin: 0;
-            padding: 0;
-        }
-        
-        h1, h2 {
-            color: #A0C4FF;
-        }
-
-        /* Container */
-        .container {
-            max-width: 960px;  /* Max width for the container */
-            margin: 40px auto;
-            padding: 20px;
-            background-color: #2c2c2c;
-            border-radius: 8px;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
-        }
-
-        /* Header */
-        header {
-            text-align: center;
-            margin-bottom: 30px;
-        }
-
-        header h1 {
-            font-size: 2.8rem;
-        }
-
-        header p {
-            font-size: 1.1rem;
-            color: #ccc;
-        }
-
-        /* Table Styling */
-        table {
-            width: 100%;
-            max-width: 100%;  /* Make sure table stretches to fit */
-            border-collapse: collapse;
-            margin-top: 30px;
-        }
-
-        th, td {
-            padding: 8px 12px;  /* Adjust padding for a more compact look */
-            text-align: left;
-            border-bottom: 1px solid #444;
-        }
-
-        th {
-            background-color: #333;
-            font-size: 1.1rem;
-            color: #A0C4FF;
-        }
-
-        td {
-            background-color: #444;
-        }
-
-        tr:hover {
-            background-color: #555;
-        }
-
-        /* Links Styling */
-        a {
-            text-decoration: none;
-            color: #A0C4FF;
-            font-weight: bold;
-        }
-
-        a:hover {
-            color: #88aaff;
-        }
-
-        /* Buttons */
-        .btn {
-            display: inline-block;
-            padding: 8px 16px;  
-            background-color: #6a8eae;
-            color: #fff;
-            border: none;
-            border-radius: 4px;
-            text-align: center;
-            font-size: 0.95rem;
-            cursor: pointer;
-            text-decoration: none;
-            transition: background-color 0.3s ease;
-            margin: 3px;
-        }
-
-        .btn:hover {
-            background-color: white;
-            color: black;
-        }
-
-        /* Footer */
-        footer {
-            text-align: center;
-            margin-top: 40px;
-            font-size: 0.9rem;
-            color: #bbb;
-        }
-
-        footer a {
-            color: #A0C4FF;
-        }
-
-        footer a:hover {
-            color: #88aaff;
-        }
-
-    </style>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 </head>
-<body>
+<body class="is-preload">
 
-    <div class="container">
-        <header>
-            <h1>📚 Book Matching Project</h1>
-            <p>This project extracts book data from <strong>BooksToScrape</strong> and <strong>Open Library</strong>, and stores them in relational tables.</p>
+    <!-- Wrapper -->
+    <div id="wrapper">
+
+        <!-- Header -->
+        <header id="header">
+            <div class="logo">
+                <span class="icon fa-book"></span>
+            </div>
+            <div class="content">
+                <div class="inner">
+                    <h1>Book Matching Project</h1>
+                    <p>Extracting and comparing book data from <strong>BooksToScrape</strong> & <strong>Open Library</strong>.</p>
+                </div>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#downloads">Downloads</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
         </header>
 
-        <section>
-            <h2>📂 Download Extracted Data</h2>
-            <table>
-                <tr>
-                    <th>Data Type</th>
-                    <th>Download Link</th>
-                    <th>Website Link</th>
-                </tr>
-                <tr>
-                    <td>📄 BooksToScrape HTML Pages</td>
-                    <td>
-                       <a href="extracted_data/books_html/page_1.html" class="btn" target="_blank">Page 1</a>
-                        <a href="extracted_data/books_html/page_2.html" class="btn" target="_blank">Page 2</a>
-                        <a href="extracted_data/books_html/page_3.html" class="btn" target="_blank">Page 3</a>
-                        <a href="extracted_data/books_html/page_4.html" class="btn" target="_blank">Page 4</a>
-                        <a href="extracted_data/books_html/page_5.html" class="btn" target="_blank">Page 5</a>
-                    </td>
-                    <td><a href="https://books.toscrape.com/" target="_blank">BooksToScrape</a></td>
-                </tr>
-                <tr>
-                    <td>📄 Open Library JSON Data</td>
-                    <td><a href="extracted_data/openlibrary_html/books.json" download>Download JSON</a></td>
-                    <td><a href="https://openlibrary.org/" target="_blank">Open Library</a></td>
-                </tr>
-                <tr>
-                    <td>📊 Table A (BooksToScrape Data)</td>
-                    <td><a href="output/tableA.csv" download>Download tableA.csv</a></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>📊 Table B (Open Library Data)</td>
-                    <td><a href="output/tableB.csv" download>Download tableB.csv</a></td>
-                    <td></td>
-                </tr>
-            </table>
-        </section>
+        <!-- Main -->
+        <div id="main">
 
-        <section>
-            <h2>🔍 Project Details</h2>
-            <p>I used <strong>Python, BeautifulSoup, and Requests</strong> to scrape book data. The extracted data is formatted as CSV for analysis.</p>
-        </section>
+            <!-- Downloads Section -->
+            <article id="downloads">
+                <h2 class="major">📂 Download Extracted Data</h2>
+                <table>
+                    <tr>
+                        <th>Data Type</th>
+                        <th>Download</th>
+                        <th>Source</th>
+                    </tr>
+                    <tr>
+                        <td>BooksToScrape HTML Pages</td>
+                        <td><a href="output/books_data.zip" class="button primary icon solid fa-download" download>Download ZIP</a></td>
+                        <td><a href="https://books.toscrape.com/" target="_blank">BooksToScrape</a></td>
+                    </tr>
+                    <tr>
+                        <td>Open Library HTML Pages</td>
+                        <td><a href="output/openlibrary_data.zip" class="button primary icon solid fa-download" download>Download ZIP</a></td>
+                        <td><a href="https://openlibrary.org/" target="_blank">Open Library</a></td>
+                    </tr>
+                    <tr>
+                        <td>Table A (BooksToScrape CSV)</td>
+                        <td><a href="output/tableA.csv" class="button primary icon solid fa-download" download>Download CSV</a></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Table B (Open Library CSV)</td>
+                        <td><a href="output/tableB.csv" class="button primary icon solid fa-download" download>Download CSV</a></td>
+                        <td></td>
+                    </tr>
+                </table>
+            </article>
+
+            <!-- About Section -->
+            <article id="about">
+                <h2 class="major">📖 About</h2>
+                <span class="image main"><img src="images/pic01.jpg" alt="Books Image" /></span>
+                <p>This project uses **Python, BeautifulSoup, and Requests** to extract book data from BooksToScrape and Open Library.</p>
+                <p>We provide both raw HTML pages and structured CSV of 1000 datasets for easy analysis.</p>
+            </article>
+
+            <!-- Contact Section -->
+            <article id="contact">
+                <h2 class="major">📧 Contact</h2>
+                <form method="post" action="#">
+                    <div class="fields">
+                        <div class="field half">
+                            <label for="name">Name</label>
+                            <input type="text" name="name" id="name" />
+                        </div>
+                        <div class="field half">
+                            <label for="email">Email</label>
+                            <input type="email" name="email" id="email" />
+                        </div>
+                        <div class="field">
+                            <label for="message">Message</label>
+                            <textarea name="message" id="message" rows="4"></textarea>
+                        </div>
+                    </div>
+                    <ul class="actions">
+                        <li><input type="submit" value="Send Message" class="primary" /></li>
+                        <li><input type="reset" value="Reset" /></li>
+                    </ul>
+                </form>
+            </article>
+
+        </div>
+
+        <!-- Footer -->
+        <footer id="footer">
+            <p>Created by Vu Nguyen | <a href="https://github.com/maxlol1102">GitHub</a></p>
+        </footer>
+
     </div>
 
-    <footer>
-        <p>Created with ❤️ by Vu Nguyen | <a href="https://github.com/maxlol1102">GitHub</a></p>
-    </footer>
+    <!-- BG -->
+    <div id="bg"></div>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
 
 </body>
 </html>
