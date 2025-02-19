@@ -1,0 +1,7 @@
+Attribute,Type
+ID,Textual
+Title,Textual
+Price,Numeric
+Rating,Categorical
+Stock,Categorical
+Author,Textual
